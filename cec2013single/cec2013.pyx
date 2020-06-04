@@ -40,7 +40,7 @@ cdef class Benchmark:
         z = NULL
         x_bound = NULL
 
-    cpdef get_info(self, int fun, int dim):
+    cpdef get_info(self, int fun):
         """ 
         Return the lower bound of the function
         """
