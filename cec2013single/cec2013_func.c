@@ -77,7 +77,7 @@ void test_func(double *x, double *f, int nx, int mx,int func_num)
 		for (i=0; i<nx; i++)
 			x_bound[i]=100.0;
 		
-		sprintf(FileName, "cec2013_data/M_D%d.txt", nx);
+		sprintf(FileName, "./cec2013_data/M_D%d.txt", nx);
 		fpt = fopen(FileName,"r");
 		if (fpt==NULL)
 		{
@@ -96,7 +96,7 @@ void test_func(double *x, double *f, int nx, int mx,int func_num)
 		fclose(fpt);
 		
 
-		fpt=fopen("cec2013_data/shift_data.txt","r");
+		fpt=fopen("./cec2013_data/shift_data.txt","r");
 		if (fpt==NULL)
 		{
 			printf("\n Error: Cannot open data file 'cec2013_data/shift_data.txt' for reading \n");
